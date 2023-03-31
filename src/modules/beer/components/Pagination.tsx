@@ -59,7 +59,7 @@ const Pagination = () => {
                   currentPage === page
                     ? " z-50 bg-orange-100/40 text-slate-800 hover:bg-orange-100/40"
                     : "text-slate-700 hover:bg-gray-50",
-                  " relative inline-flex items-center px-4 py-2 text-sm font-semibold ring-1 hover:bg-orange-100/80 ring-inset ring-gray-300  focus:z-20 focus:outline-offset-0"
+                  " relative inline-flex items-center px-1 sm:px-4 py-2 text-sm font-semibold ring-1 hover:bg-orange-100/80 ring-inset ring-gray-300  focus:z-20 focus:outline-offset-0"
                 )}
                 href={`/?page=${page}`}
               >
