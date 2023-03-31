@@ -42,7 +42,7 @@ const BeerPage = ({
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
     <>
-      <Head title="Home" />
+      <Head title={beer.name} />
       <BeerPageTemplate beer={beer} />
     </>
   );
