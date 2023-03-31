@@ -2,6 +2,7 @@ import { Beer } from "@/types/beer";
 import { useMemo } from "react";
 import Image from "next/image";
 import BeerDetails, { BeerDetailsProps } from "../components/BeerDetails";
+import { capitalizeFirstLetter } from "../../../lib/util";
 
 export type BeerPageProps = {
   beer: Beer;
@@ -16,6 +17,9 @@ const BeerPageTemplate = ({ beer }: BeerPageProps) => {
       items: [
         `First Brewed: ${beer.first_brewed}`,
         `ABV: ${beer.abv}%`,
+        `Volume: ${beer.volume.value} ${capitalizeFirstLetter(
+          beer.volume.unit
+        )}`,
         `IBU: ${beer.ibu}`,
       ],
     });

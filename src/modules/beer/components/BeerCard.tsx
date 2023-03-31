@@ -74,7 +74,7 @@ const BeerCard = ({ beer }: BeerCardProps) => {
                 </span>
               </span>
               <span className="text-gray-700">
-                Size <br />
+                Volume <br />
                 <span className="text-gray-900 font-semibold">
                   {beer.volume.value} {capitalizeFirstLetter(beer.volume.unit)}
                 </span>
